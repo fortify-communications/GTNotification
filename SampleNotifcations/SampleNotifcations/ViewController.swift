@@ -3,6 +3,7 @@
 //  SampleNotifcations
 //
 //  Created by Mathieu White on 2015-06-21.
+//  Modified by King-Wizard
 //  Copyright (c) 2015 Mathieu White. All rights reserved.
 //
 
@@ -14,7 +15,7 @@ class ViewController: UIViewController, GTNotificationDelegate
     {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor.whiteColor()
+        //        self.view.backgroundColor = UIColor.whiteColor()
         
         // Notification Button
         let button: UIButton = UIButton.buttonWithType(UIButtonType.System) as! UIButton
@@ -37,20 +38,18 @@ class ViewController: UIViewController, GTNotificationDelegate
             views: ["_super" : self.view, "_btn" : button]))
     }
 
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
     func notificationButtonPressed()
     {
         // Initialize a notification
         let notification: GTNotification = GTNotification()
         notification.image = UIImage(named: "notification")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-        notification.blurEnabled = true
-        notification.blurEffectStyle = UIBlurEffectStyle.Dark
+        //        notification.blurEnabled = true
+        //        notification.blurEffectStyle = UIBlurEffectStyle.Dark
+        
+        notification.backgroundColor = UIColor.redColor()
+        notification.title = "Erreur"
+        notification.message = "Désolé, nous avons rencontré une\nerreur de chargement. veuillez\nréessayer."
+        
         notification.tintColor = UIColor.whiteColor()
         notification.animation = GTNotificationAnimation.Slide
         notification.delegate = self
@@ -90,13 +89,14 @@ class ViewController: UIViewController, GTNotificationDelegate
     
     func notificationFontForTitleLabel(notification: GTNotification) -> UIFont
     {
-        return UIFont(name: "AvenirNext-Medium", size: 16.0)!
+        //        return UIFont(name: "AvenirNext-Medium", size: 16.0)!
+        return UIFont(name: "AvenirNext-Bold", size: 16.0)!
     }
     
     func notificationFontForMessageLabel(notification: GTNotification) -> UIFont
     {
-        return UIFont(name: "AvenirNext-Regular", size: 13.0)!
+        //        return UIFont(name: "AvenirNext-Regular", size: 13.0)!
+        return UIFont(name: "AvenirNext-Medium", size: 15.0)!
     }
     
 }
-
