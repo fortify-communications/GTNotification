@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "GTNotification"
-  s.version      = "1.0"
+  s.version      = "1.1"
   s.summary      = "[King-Wizard version] An in app customizable notification banner for Swift."
   s.description  = <<-DESC
                    Which slides/fades automatically/manually from the top/bottom of the screen.

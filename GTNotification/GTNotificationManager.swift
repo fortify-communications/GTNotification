@@ -2,9 +2,11 @@
 //  GTNotificationManager.swift
 //  An in app notification banner for Swift.
 //
-//  Version 0.1
+//  Release 1.1
+//  Solid red background + Exclamation mark symbol's image left aligned + Title left aligned + Message left aligned.
 //
 //  Created by Mathieu White on 2015-06-20.
+//  Modified by King-Wizard
 //  Copyright (c) 2015 Mathieu White. All rights reserved.
 //
 
@@ -305,7 +307,7 @@ private class GTNotificationView: UIView
             // Views Dictionary
             var viewsDict: [NSObject : AnyObject] = [NSObject : AnyObject]()
             viewsDict["_view"] = self
-
+            
             // Metrics Dictionary
             var metricsDict: [NSObject : AnyObject] = [NSObject : AnyObject]()
             metricsDict["_h"] = self.notificationViewHeight
@@ -326,7 +328,7 @@ private class GTNotificationView: UIView
             if (self.position == GTNotificationPosition.Top)
             {
                 var topConstant: CGFloat = 0.0
-
+                
                 if (self.animation == GTNotificationAnimation.Slide)
                 {
                     topConstant = -self.notificationViewHeight!
@@ -520,7 +522,7 @@ private class GTNotificationView: UIView
     // MARK: - Gesture Recognizer Methods
     
     /**
-    This method fires when the notification view is tapped. 
+    This method fires when the notification view is tapped.
     
     NOTE: Tapping the notification view will dismiss it immediately.
     */
@@ -623,7 +625,7 @@ class GTNotificationManager: NSObject, GTNotificationViewDelegate
                 
                 // Notify the delegate of the notification's dismissal
                 if let notification = notification
-                {                    
+                {
                     if (notification.delegate?.respondsToSelector(Selector("notificationDidDismiss:")) == true)
                     {
                         notification.delegate!.notificationDidDismiss!(notification)

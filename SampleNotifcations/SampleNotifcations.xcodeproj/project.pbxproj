@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CB69FCB1B7C09040063DA36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB69FCA1B7C09040063DA36 /* Main.storyboard */; };
 		4E1ED5F51B38EA4000BE8EAB /* GTNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1ED5F41B38EA4000BE8EAB /* GTNotification.swift */; };
 		4ECC19FA1B3740A10034B572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECC19F91B3740A10034B572 /* AppDelegate.swift */; };
 		4ECC19FC1B3740A10034B572 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECC19FB1B3740A10034B572 /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2CB69FCA1B7C09040063DA36 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4E1ED5F41B38EA4000BE8EAB /* GTNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GTNotification.swift; path = ../GTNotification/GTNotification.swift; sourceTree = "<group>"; };
 		4ECC19F41B3740A10034B572 /* SampleNotifcations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleNotifcations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ECC19F81B3740A10034B572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				4ECC1A191B37442C0034B572 /* GTNotification */,
 				4ECC19F91B3740A10034B572 /* AppDelegate.swift */,
 				4ECC19FB1B3740A10034B572 /* ViewController.swift */,
+				2CB69FCA1B7C09040063DA36 /* Main.storyboard */,
 				4ECC1A001B3740A10034B572 /* Images.xcassets */,
 				4ECC19F71B3740A10034B572 /* Supporting Files */,
 			);
@@ -202,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4ECC1A011B3740A10034B572 /* Images.xcassets in Resources */,
+				2CB69FCB1B7C09040063DA36 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
