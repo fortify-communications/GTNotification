@@ -2,7 +2,7 @@
 //  GTNotification.swift
 //  An in app notification banner for Swift.
 //
-//  Release 1.1
+//  Release 1.2
 //  Solid red background + Exclamation mark symbol's image left aligned + Title left aligned + Message left aligned.
 //
 //  Created by Mathieu White on 2015-06-20.
@@ -50,7 +50,7 @@ notification to display on the application's window.
 class GTNotification: NSObject
 {
     /// The title of the notification
-    var title: String = "Sample Notification"
+    //    var title: String = "Sample Notification"
     
     /// The message of the notification
     var message: String = "This is a sample notification."

@@ -2,7 +2,7 @@
 //  GTNotificationManager.swift
 //  An in app notification banner for Swift.
 //
-//  Release 1.1
+//  Release 1.2
 //  Solid red background + Exclamation mark symbol's image left aligned + Title left aligned + Message left aligned.
 //
 //  Created by Mathieu White on 2015-06-20.
@@ -131,9 +131,9 @@ private class GTNotificationView: UIView
         self.setTranslatesAutoresizingMaskIntoConstraints(false)
         
         // Initialize the title label for the notification view
-        let titleLabel: UILabel = UILabel()
-        titleLabel.font = UIFont.systemFontOfSize(16.0)
-        titleLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
+        //        let titleLabel: UILabel = UILabel()
+        //        titleLabel.font = UIFont.systemFontOfSize(16.0)
+        //        titleLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
         
         // Initialize the message label for the notification view
         let messageLabel: UILabel = UILabel()
@@ -151,13 +151,17 @@ private class GTNotificationView: UIView
         self.addGestureRecognizer(tapGesture)
         
         // Add the labels to the notification view
-        self.addSubview(titleLabel)
+        //        self.addSubview(titleLabel)
         self.addSubview(messageLabel)
         self.addSubview(imageView)
         
         // Set each label to their variable
-        self.titleLabel = titleLabel
+        //        self.titleLabel = titleLabel
+        //        titleLabel.textAlignment = NSTextAlignment.Center
+        
         self.messageLabel = messageLabel
+        self.messageLabel!.textAlignment = NSTextAlignment.Center
+        
         self.imageView = imageView
         self.tapGesture = tapGesture
     }
@@ -223,47 +227,53 @@ private class GTNotificationView: UIView
                 constant: 36.0))
         }
         
-        // Title Label Top
-        self.addConstraint(NSLayoutConstraint(item: self.titleLabel!,
-            attribute: NSLayoutAttribute.Top,
-            relatedBy: NSLayoutRelation.Equal,
-            toItem: self,
-            attribute: NSLayoutAttribute.Top,
-            multiplier: 1.0,
-            constant: self.verticalPadding))
         
-        // Title Label Left
-        self.addConstraint(NSLayoutConstraint(item: self.titleLabel!,
-            attribute: NSLayoutAttribute.Left,
-            relatedBy: NSLayoutRelation.Equal,
-            toItem: (self.imageView?.image == nil) ? self : self.imageView!,
-            attribute: (self.imageView?.image == nil) ? NSLayoutAttribute.Left : NSLayoutAttribute.Right,
-            multiplier: 1.0,
-            constant: self.horizontalPadding))
+        //        // Title Label Top
+        //        self.addConstraint(NSLayoutConstraint(item: self.titleLabel!,
+        //            attribute: NSLayoutAttribute.Top,
+        //            relatedBy: NSLayoutRelation.Equal,
+        //            toItem: self,
+        //            attribute: NSLayoutAttribute.Top,
+        //            multiplier: 1.0,
+        //            constant: self.verticalPadding))
+        //
+        //        // Title Label Left
+        //        self.addConstraint(NSLayoutConstraint(item: self.titleLabel!,
+        //            attribute: NSLayoutAttribute.Left,
+        //            relatedBy: NSLayoutRelation.Equal,
+        //            toItem: (self.imageView?.image == nil) ? self : self.imageView!,
+        //            attribute: (self.imageView?.image == nil) ? NSLayoutAttribute.Left : NSLayoutAttribute.Right,
+        //            multiplier: 1.0,
+        //            constant: self.horizontalPadding))
+        //
+        //        // Title Label Right
+        //        self.addConstraint(NSLayoutConstraint(item: self.titleLabel!,
+        //            attribute: NSLayoutAttribute.Right,
+        //            relatedBy: NSLayoutRelation.Equal,
+        //            toItem: self,
+        //            attribute: NSLayoutAttribute.Right,
+        //            multiplier: 1.0,
+        //            constant: -self.horizontalPadding))
         
-        // Title Label Right
-        self.addConstraint(NSLayoutConstraint(item: self.titleLabel!,
-            attribute: NSLayoutAttribute.Right,
-            relatedBy: NSLayoutRelation.Equal,
-            toItem: self,
-            attribute: NSLayoutAttribute.Right,
-            multiplier: 1.0,
-            constant: -self.horizontalPadding))
         
         // Message Label Top
         self.addConstraint(NSLayoutConstraint(item: self.messageLabel!,
             attribute: NSLayoutAttribute.Top,
             relatedBy: NSLayoutRelation.Equal,
-            toItem: self.titleLabel!,
-            attribute: NSLayoutAttribute.Baseline,
+            //            toItem: self.titleLabel!,
+            toItem: self,
+            //            attribute: NSLayoutAttribute.Baseline,
+            attribute: NSLayoutAttribute.Top,
             multiplier: 1.0,
-            constant: 0.0))
+            //            constant: 0.0))
+            constant: self.verticalPadding))
         
         // Message Label Left
         self.addConstraint(NSLayoutConstraint(item: self.messageLabel!,
             attribute: NSLayoutAttribute.Left,
             relatedBy: NSLayoutRelation.Equal,
-            toItem: self.titleLabel!,
+            //            toItem: self.titleLabel!,
+            toItem: self,
             attribute: NSLayoutAttribute.Left,
             multiplier: 1.0,
             constant: 0.0))
@@ -272,7 +282,8 @@ private class GTNotificationView: UIView
         self.addConstraint(NSLayoutConstraint(item: self.messageLabel!,
             attribute: NSLayoutAttribute.Right,
             relatedBy: NSLayoutRelation.Equal,
-            toItem: self.titleLabel!,
+            //            toItem: self.titleLabel!,
+            toItem: self,
             attribute: NSLayoutAttribute.Right,
             multiplier: 1.0,
             constant: 0.0))
@@ -400,10 +411,10 @@ private class GTNotificationView: UIView
         let maximumLabelSize: CGSize = CGSizeMake(maximumLabelWidth, CGFloat.max)
         
         // Get the height of the title label
-        let titleLabelHeight: CGFloat = (self.titleLabel!.text! as NSString).boundingRectWithSize(maximumLabelSize,
-            options: NSStringDrawingOptions.UsesLineFragmentOrigin,
-            attributes: [NSFontAttributeName : self.titleLabel!.font],
-            context: nil).height
+        //        let titleLabelHeight: CGFloat = (self.titleLabel!.text! as NSString).boundingRectWithSize(maximumLabelSize,
+        //            options: NSStringDrawingOptions.UsesLineFragmentOrigin,
+        //            attributes: [NSFontAttributeName : self.titleLabel!.font],
+        //            context: nil).height
         
         // Get the height of the message label
         let messageLabelHeight: CGFloat = (self.messageLabel!.text! as NSString).boundingRectWithSize(maximumLabelSize,
@@ -412,7 +423,8 @@ private class GTNotificationView: UIView
             context: nil).height
         
         // Return the total height, (vertical top and bottom padding + label heights + label spacing)
-        return self.verticalPadding * 2.0 + titleLabelHeight + messageLabelHeight + self.labelSpacing
+        //        return self.verticalPadding * 2.0 + titleLabelHeight + messageLabelHeight + self.labelSpacing
+        return self.verticalPadding * 2.0 + messageLabelHeight + self.labelSpacing
     }
     
     /**
@@ -423,7 +435,7 @@ private class GTNotificationView: UIView
     func prepareForNotification(notification: GTNotification)
     {
         self.tintColor = notification.tintColor
-        self.titleLabel?.text = notification.title
+        //        self.titleLabel?.text = notification.title
         self.messageLabel?.text = notification.message
         self.imageView?.image = notification.image
         self.position = notification.position
@@ -464,7 +476,8 @@ private class GTNotificationView: UIView
         }
         else
         {
-            self.alpha = 1.0
+            //            self.alpha = 1.0
+            self.alpha = 0.95
         }
         
         // Layout the view's subviews
@@ -660,3 +673,4 @@ class GTNotificationManager: NSObject, GTNotificationViewDelegate
         }
     }
 }
+
