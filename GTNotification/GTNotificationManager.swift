@@ -2,7 +2,7 @@
 //  GTNotificationManager.swift
 //  An in app notification banner for Swift.
 //
-//  Release 1.1-fixed
+//  Release 1.0-fixed
 //  Solid red background + Exclamation mark symbol's image left aligned + Title left aligned + Message left aligned.
 //
 //  Created by Mathieu White on 2015-06-20.
@@ -307,7 +307,7 @@ public class GTNotificationView: UIView
             // Views Dictionary
             var viewsDict: [NSObject : AnyObject] = [NSObject : AnyObject]()
             viewsDict["_view"] = self
-            
+
             // Metrics Dictionary
             var metricsDict: [NSObject : AnyObject] = [NSObject : AnyObject]()
             metricsDict["_h"] = self.notificationViewHeight
@@ -328,7 +328,7 @@ public class GTNotificationView: UIView
             if (self.position == GTNotificationPosition.Top)
             {
                 var topConstant: CGFloat = 0.0
-                
+
                 if (self.animation == GTNotificationAnimation.Slide)
                 {
                     topConstant = -self.notificationViewHeight!
