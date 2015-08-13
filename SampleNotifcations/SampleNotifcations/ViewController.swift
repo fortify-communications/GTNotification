@@ -38,7 +38,6 @@ class ViewController: UIViewController, GTNotificationDelegate
             views: ["_super" : self.view, "_btn" : button]))
     }
     
-    
     func notificationButtonPressed()
     {
         // Initialize a notification
