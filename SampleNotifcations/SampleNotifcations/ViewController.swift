@@ -38,17 +38,16 @@ class ViewController: UIViewController, GTNotificationDelegate
             views: ["_super" : self.view, "_btn" : button]))
     }
     
-    
     func notificationButtonPressed()
     {
         // Initialize a notification
         let notification: GTNotification = GTNotification()
-        //        notification.image = UIImage(named: "notification")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+        notification.image = UIImage(named: "notification")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
         //        notification.blurEnabled = true
         //        notification.blurEffectStyle = UIBlurEffectStyle.Dark
         
         notification.backgroundColor = UIColor.redColor()
-        //        notification.title = "Erreur"
+        notification.title = "Erreur"
         notification.message = "Désolé, nous avons rencontré une\nerreur de chargement. veuillez\nréessayer."
         
         notification.tintColor = UIColor.whiteColor()
@@ -88,10 +87,11 @@ class ViewController: UIViewController, GTNotificationDelegate
         NSLog("The notification was dismissed automatically")
     }
     
-    //    func notificationFontForTitleLabel(notification: GTNotification) -> UIFont
-    //    {
-    //        return UIFont(name: "AvenirNext-Medium", size: 16.0)!
-    //    }
+    func notificationFontForTitleLabel(notification: GTNotification) -> UIFont
+    {
+        //        return UIFont(name: "AvenirNext-Medium", size: 16.0)!
+        return UIFont(name: "AvenirNext-Bold", size: 16.0)!
+    }
     
     func notificationFontForMessageLabel(notification: GTNotification) -> UIFont
     {
