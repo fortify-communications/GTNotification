@@ -3,6 +3,7 @@
 //  SampleNotifcations
 //
 //  Created by Mathieu White on 2015-06-21.
+//  Modified by King-Wizard
 //  Copyright (c) 2015 Mathieu White. All rights reserved.
 //
 
