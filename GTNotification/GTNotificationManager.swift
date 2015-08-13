@@ -2,7 +2,7 @@
 //  GTNotificationManager.swift
 //  An in app notification banner for Swift.
 //
-//  Release 1.3-fixed
+//  Release 1.1-fixed
 //  Solid red background + Exclamation mark symbol's image left aligned + Title left aligned + Message left aligned.
 //
 //  Created by Mathieu White on 2015-06-20.
@@ -157,15 +157,7 @@ public class GTNotificationView: UIView
         
         // Set each label to their variable
         self.titleLabel = titleLabel
-        
-        // Custom line added
-        self.titleLabel!.textAlignment = NSTextAlignment.Center
-        
         self.messageLabel = messageLabel
-        
-        // Custom line added
-        self.messageLabel!.textAlignment = NSTextAlignment.Center
-        
         self.imageView = imageView
         self.tapGesture = tapGesture
     }
