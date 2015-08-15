@@ -10,7 +10,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.4'
 use_frameworks!
 
-pod 'GTNotification', '1.2-fixed'
+pod 'GTNotification', '1.0-fixed'
 ```
 
 - Then add ```import GTNotification``` at the top of your Swift class.
