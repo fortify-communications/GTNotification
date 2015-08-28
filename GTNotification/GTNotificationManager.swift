@@ -2,7 +2,7 @@
 //  GTNotificationManager.swift
 //  An in app notification banner for Swift.
 //
-//  Release 1.2-fixed
+//  Release 1.4
 //  Solid red background + Exclamation mark symbol's image left aligned + Title left aligned + Message left aligned.
 //
 //  Created by Mathieu White on 2015-06-20.
@@ -147,8 +147,8 @@ public class GTNotificationView: UIView
         imageView.setTranslatesAutoresizingMaskIntoConstraints(false)
         
         // Initialize the tap gesture
-        let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: Selector("notificationTapped"))
-        self.addGestureRecognizer(tapGesture)
+        //        let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: Selector("notificationTapped"))
+        //        self.addGestureRecognizer(tapGesture)
         
         // Add the labels to the notification view
         //        self.addSubview(titleLabel)
@@ -163,7 +163,7 @@ public class GTNotificationView: UIView
         self.messageLabel!.textAlignment = NSTextAlignment.Center
         
         self.imageView = imageView
-        self.tapGesture = tapGesture
+        //        self.tapGesture = tapGesture
     }
     
     // MARK: - Auto Layout
@@ -660,8 +660,7 @@ public class GTNotificationManager: NSObject, GTNotificationViewDelegate
         
         self.dismissCurrentNotification(nil)
         
-        if
-            let target: AnyObject = notification.target,
+        if let target: AnyObject = notification.target,
             let action = notification.action
         {
             if (target.respondsToSelector(action) == true)
@@ -673,4 +672,3 @@ public class GTNotificationManager: NSObject, GTNotificationViewDelegate
         }
     }
 }
-

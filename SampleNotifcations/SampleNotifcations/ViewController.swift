@@ -43,7 +43,7 @@ class ViewController: UIViewController, GTNotificationDelegate
     {
         // Initialize a notification
         let notification: GTNotification = GTNotification()
-        //        notification.image = UIImage(named: "notification")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+        notification.image = UIImage(named: "notification")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
         //        notification.blurEnabled = true
         //        notification.blurEffectStyle = UIBlurEffectStyle.Dark
         

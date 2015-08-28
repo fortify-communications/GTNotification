@@ -2,7 +2,7 @@
 //  GTNotification.swift
 //  An in app notification banner for Swift.
 //
-//  Release 1.2-fixed
+//  Release 1.4
 //  Solid red background + Exclamation mark symbol's image left aligned + Title left aligned + Message left aligned.
 //
 //  Created by Mathieu White on 2015-06-20.
