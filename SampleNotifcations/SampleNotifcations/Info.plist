@@ -34,5 +34,13 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Zocial.ttf</string>
+		<string>FontAwesome.otf</string>
+		<string>Foundation-icons.ttf</string>
+		<string>Ionicons.ttf</string>
+		<string>Glyphicons-regular.otf</string>
+	</array>
 </dict>
 </plist>

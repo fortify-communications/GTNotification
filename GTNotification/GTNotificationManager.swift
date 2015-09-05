@@ -2,7 +2,7 @@
 //  GTNotificationManager.swift
 //  An in app notification banner for Swift.
 //
-//  Release 1.4
+//  Release 1.4.1
 //  Solid red background + Exclamation mark symbol's image left aligned + Title left aligned + Message left aligned.
 //
 //  Created by Mathieu White on 2015-06-20.
@@ -607,12 +607,14 @@ public class GTNotificationManager: NSObject, GTNotificationViewDelegate
             // Animate the notification
             notificationView.animateNotification(willShow: true, completion: {(finished: Bool) -> Void in
                 
-                // Schedule the notification view's dismissal
-                self.dismissalTimer = NSTimer.scheduledTimerWithTimeInterval(notification.duration,
-                    target: self,
-                    selector: Selector("dismissCurrentNotification:"),
-                    userInfo: notification,
-                    repeats: false)
+                if !notification.isDurationUnlimited {
+                    // Schedule the notification view's dismissal
+                    self.dismissalTimer = NSTimer.scheduledTimerWithTimeInterval(notification.duration,
+                        target: self,
+                        selector: Selector("dismissCurrentNotification:"),
+                        userInfo: notification,
+                        repeats: false)
+                }
                 
             })
             
@@ -644,6 +646,23 @@ public class GTNotificationManager: NSObject, GTNotificationViewDelegate
                         notification.delegate!.notificationDidDismiss!(notification)
                     }
                 }
+                
+                notificationView.removeFromSuperview()
+                self.currentNotificationView = nil
+                
+            })
+        }
+    }
+    
+    /**
+        This method dismissed the current notification on the application's window.
+        Custom method added by King Wizard.
+    */
+    public func dismissCurrentNotification() {
+        if let notificationView = self.currentNotificationView {
+            // Animate the notification
+            notificationView.animateNotification(willShow: false, completion: {
+                (finished: Bool) -> Void in
                 
                 notificationView.removeFromSuperview()
                 self.currentNotificationView = nil

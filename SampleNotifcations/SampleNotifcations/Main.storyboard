@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cek-Kp-kzg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cek-Kp-kzg">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--The TITLE-->
@@ -15,7 +16,41 @@
                     <view key="view" contentMode="scaleToFill" id="rMm-2W-m4a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DT2-Im-c3K">
+                                <rect key="frame" x="99" y="236" width="124" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DT2-Im-c3K" secondAttribute="height" multiplier="124:33" id="eVx-9S-qDA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                <state key="normal" title="Show Notification">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showNotificationButtonPressed" destination="7Tj-7D-a7a" eventType="touchUpInside" id="CcQ-Tq-QGa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lif-U5-TEj">
+                                <rect key="frame" x="92" y="331" width="138" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Lif-U5-TEj" secondAttribute="height" multiplier="46:11" id="9eQ-O8-90n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                <state key="normal" title="Dismiss Notification">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissNotificationButtonPressed" destination="7Tj-7D-a7a" eventType="touchUpInside" id="0HN-sJ-wQ0"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="DT2-Im-c3K" secondAttribute="centerX" constant="-1" id="HhS-mN-L9a"/>
+                            <constraint firstItem="DT2-Im-c3K" firstAttribute="top" secondItem="0Po-gL-XJd" secondAttribute="bottom" constant="172" id="PTh-cN-HU5"/>
+                            <constraint firstItem="Lif-U5-TEj" firstAttribute="top" secondItem="DT2-Im-c3K" secondAttribute="bottom" constant="62" id="jmt-Nf-QcI"/>
+                            <constraint firstAttribute="centerX" secondItem="Lif-U5-TEj" secondAttribute="centerX" constant="-1" id="x09-Vk-4Hq"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="The TITLE" id="x0P-n6-zc6"/>
                 </viewController>

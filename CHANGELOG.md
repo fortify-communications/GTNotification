@@ -2,9 +2,12 @@
 All notable changes to this project will be documented in this file.
 `GTNotification` adheres to [Semantic Versioning](http://semver.org/).
 
-- `1.x` Releases - From [Release 1.0-fixed](https://github.com/King-Wizard/GTNotification/releases/tag/1.0-fixed) To [Release 1.4](https://github.com/King-Wizard/GTNotification/releases/tag/1.4)
+- `1.x` Releases - From [Release 1.0-fixed](https://github.com/King-Wizard/GTNotification/releases/tag/1.0-fixed) To [Release 1.4.1](https://github.com/King-Wizard/GTNotification/releases/tag/1.4.1)
 
 ---
+
+#### [Release 1.4.1](https://github.com/King-Wizard/GTNotification/releases/tag/1.4.1)
+- Final custom release: improved the previous release adding a way of programmatically dismissing the banner message notification.
 
 #### [Release 1.4](https://github.com/King-Wizard/GTNotification/releases/tag/1.4)
 - Final custom release.

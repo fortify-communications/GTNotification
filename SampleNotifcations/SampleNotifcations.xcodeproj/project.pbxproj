@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C33CCFF1B9B44F500A21578 /* BannerMessageNotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C33CCFE1B9B44F500A21578 /* BannerMessageNotificationType.swift */; };
+		2C33CD011B9B450000A21578 /* BannerMessageNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C33CD001B9B450000A21578 /* BannerMessageNotification.swift */; };
+		2C33CD051B9B483F00A21578 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C33CD041B9B483F00A21578 /* AppFonts.swift */; };
+		2C33CD071B9B488000A21578 /* SampleNotificationsFontName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C33CD061B9B488000A21578 /* SampleNotificationsFontName.swift */; };
+		2C33CD0A1B9B4F9700A21578 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C33CD091B9B4F9700A21578 /* FontAwesome.otf */; };
+		2C33CD0C1B9B4FE000A21578 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C33CD0B1B9B4FE000A21578 /* Zocial.ttf */; };
+		2C33CD101B9B501800A21578 /* Foundation-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C33CD0D1B9B501800A21578 /* Foundation-icons.ttf */; };
+		2C33CD111B9B501800A21578 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C33CD0E1B9B501800A21578 /* Ionicons.ttf */; };
+		2C33CD121B9B501800A21578 /* Glyphicons-regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C33CD0F1B9B501800A21578 /* Glyphicons-regular.otf */; };
 		2CB69FCB1B7C09040063DA36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB69FCA1B7C09040063DA36 /* Main.storyboard */; };
 		4E1ED5F51B38EA4000BE8EAB /* GTNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1ED5F41B38EA4000BE8EAB /* GTNotification.swift */; };
 		4ECC19FA1B3740A10034B572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECC19F91B3740A10034B572 /* AppDelegate.swift */; };
@@ -14,6 +23,7 @@
 		4ECC1A011B3740A10034B572 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ECC1A001B3740A10034B572 /* Images.xcassets */; };
 		4ECC1A101B3740A10034B572 /* SampleNotifcationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECC1A0F1B3740A10034B572 /* SampleNotifcationsTests.swift */; };
 		4ECC1A1B1B37442C0034B572 /* GTNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECC1A1A1B37442C0034B572 /* GTNotificationManager.swift */; };
+		8DDECE3A56B1A040D2B81465 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF38A33C003C2A2A1F46B20 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C33CCFE1B9B44F500A21578 /* BannerMessageNotificationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerMessageNotificationType.swift; sourceTree = "<group>"; };
+		2C33CD001B9B450000A21578 /* BannerMessageNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BannerMessageNotification.swift; path = ../../../../../../BannerMessageNotification.swift; sourceTree = "<group>"; };
+		2C33CD041B9B483F00A21578 /* AppFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		2C33CD061B9B488000A21578 /* SampleNotificationsFontName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleNotificationsFontName.swift; sourceTree = "<group>"; };
+		2C33CD091B9B4F9700A21578 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		2C33CD0B1B9B4FE000A21578 /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
+		2C33CD0D1B9B501800A21578 /* Foundation-icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Foundation-icons.ttf"; sourceTree = "<group>"; };
+		2C33CD0E1B9B501800A21578 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
+		2C33CD0F1B9B501800A21578 /* Glyphicons-regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Glyphicons-regular.otf"; sourceTree = "<group>"; };
 		2CB69FCA1B7C09040063DA36 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4E1ED5F41B38EA4000BE8EAB /* GTNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GTNotification.swift; path = ../GTNotification/GTNotification.swift; sourceTree = "<group>"; };
 		4ECC19F41B3740A10034B572 /* SampleNotifcations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleNotifcations.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +57,9 @@
 		4ECC1A0E1B3740A10034B572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4ECC1A0F1B3740A10034B572 /* SampleNotifcationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleNotifcationsTests.swift; sourceTree = "<group>"; };
 		4ECC1A1A1B37442C0034B572 /* GTNotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GTNotificationManager.swift; path = ../GTNotification/GTNotificationManager.swift; sourceTree = "<group>"; };
+		DBF38A33C003C2A2A1F46B20 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC73148C80727EE9B9F7A857 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FC85F27494247047EFCE4318 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DDECE3A56B1A040D2B81465 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +81,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C33CD021B9B470800A21578 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				2C33CCFE1B9B44F500A21578 /* BannerMessageNotificationType.swift */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
+		2C33CD031B9B480400A21578 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2C33CD081B9B4E9200A21578 /* Font Files */,
+				2C33CD041B9B483F00A21578 /* AppFonts.swift */,
+				2C33CD061B9B488000A21578 /* SampleNotificationsFontName.swift */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		2C33CD081B9B4E9200A21578 /* Font Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C33CD091B9B4F9700A21578 /* FontAwesome.otf */,
+				2C33CD0B1B9B4FE000A21578 /* Zocial.ttf */,
+				2C33CD0D1B9B501800A21578 /* Foundation-icons.ttf */,
+				2C33CD0E1B9B501800A21578 /* Ionicons.ttf */,
+				2C33CD0F1B9B501800A21578 /* Glyphicons-regular.otf */,
+			);
+			name = "Font Files";
+			sourceTree = "<group>";
+		};
+		2D22350128752179BF67B442 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBF38A33C003C2A2A1F46B20 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4ECC19EB1B3740A10034B572 = {
 			isa = PBXGroup;
 			children = (
 				4ECC19F61B3740A10034B572 /* SampleNotifcations */,
 				4ECC1A0C1B3740A10034B572 /* SampleNotifcationsTests */,
 				4ECC19F51B3740A10034B572 /* Products */,
+				E101FE2EEE3F0A42D3F7AD5F /* Pods */,
+				2D22350128752179BF67B442 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,9 +142,12 @@
 		4ECC19F61B3740A10034B572 /* SampleNotifcations */ = {
 			isa = PBXGroup;
 			children = (
+				2C33CD031B9B480400A21578 /* Fonts */,
+				2C33CD021B9B470800A21578 /* Enums */,
 				4ECC1A191B37442C0034B572 /* GTNotification */,
-				4ECC19F91B3740A10034B572 /* AppDelegate.swift */,
 				4ECC19FB1B3740A10034B572 /* ViewController.swift */,
+				2C33CD001B9B450000A21578 /* BannerMessageNotification.swift */,
+				4ECC19F91B3740A10034B572 /* AppDelegate.swift */,
 				2CB69FCA1B7C09040063DA36 /* Main.storyboard */,
 				4ECC1A001B3740A10034B572 /* Images.xcassets */,
 				4ECC19F71B3740A10034B572 /* Supporting Files */,
@@ -124,6 +190,15 @@
 			path = ../../GTNotificationView;
 			sourceTree = "<group>";
 		};
+		E101FE2EEE3F0A42D3F7AD5F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC73148C80727EE9B9F7A857 /* Pods.debug.xcconfig */,
+				FC85F27494247047EFCE4318 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4ECC1A131B3740A10034B572 /* Build configuration list for PBXNativeTarget "SampleNotifcations" */;
 			buildPhases = (
+				4E08EB899B11C93ADD5D5238 /* Check Pods Manifest.lock */,
 				4ECC19F01B3740A10034B572 /* Sources */,
 				4ECC19F11B3740A10034B572 /* Frameworks */,
 				4ECC19F21B3740A10034B572 /* Resources */,
+				A5AA822E5C7DDF038E95D5C3 /* Embed Pods Frameworks */,
+				0A10BBE6D9D4F5F3AB6C4002 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -204,8 +282,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C33CD0C1B9B4FE000A21578 /* Zocial.ttf in Resources */,
 				4ECC1A011B3740A10034B572 /* Images.xcassets in Resources */,
+				2C33CD111B9B501800A21578 /* Ionicons.ttf in Resources */,
 				2CB69FCB1B7C09040063DA36 /* Main.storyboard in Resources */,
+				2C33CD0A1B9B4F9700A21578 /* FontAwesome.otf in Resources */,
+				2C33CD121B9B501800A21578 /* Glyphicons-regular.otf in Resources */,
+				2C33CD101B9B501800A21578 /* Foundation-icons.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,12 +301,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A10BBE6D9D4F5F3AB6C4002 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E08EB899B11C93ADD5D5238 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A5AA822E5C7DDF038E95D5C3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4ECC19F01B3740A10034B572 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C33CD011B9B450000A21578 /* BannerMessageNotification.swift in Sources */,
 				4ECC1A1B1B37442C0034B572 /* GTNotificationManager.swift in Sources */,
+				2C33CD051B9B483F00A21578 /* AppFonts.swift in Sources */,
+				2C33CD071B9B488000A21578 /* SampleNotificationsFontName.swift in Sources */,
+				2C33CCFF1B9B44F500A21578 /* BannerMessageNotificationType.swift in Sources */,
 				4E1ED5F51B38EA4000BE8EAB /* GTNotification.swift in Sources */,
 				4ECC19FC1B3740A10034B572 /* ViewController.swift in Sources */,
 				4ECC19FA1B3740A10034B572 /* AppDelegate.swift in Sources */,
@@ -332,6 +467,7 @@
 		};
 		4ECC1A141B3740A10034B572 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC73148C80727EE9B9F7A857 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -344,6 +480,7 @@
 		};
 		4ECC1A151B3740A10034B572 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC85F27494247047EFCE4318 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

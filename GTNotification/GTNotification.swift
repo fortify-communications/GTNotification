@@ -2,7 +2,7 @@
 //  GTNotification.swift
 //  An in app notification banner for Swift.
 //
-//  Release 1.4
+//  Release 1.4.1
 //  Solid red background + Exclamation mark symbol's image left aligned + Title left aligned + Message left aligned.
 //
 //  Created by Mathieu White on 2015-06-20.
@@ -77,8 +77,11 @@ public class GTNotification: NSObject
     /// The blur effect style of the notification when blurEnabled is true. The default value is Light.
     var blurEffectStyle: UIBlurEffectStyle?
     
+    /// If set to true, the notification will be displayed until the developer dismisses it manually, and the 'var duration' will be ignored. The default value of 'isDurationUnlimited' is equals to false.
+    public var isDurationUnlimited: Bool = false
+    
     /// The duration the notification should be displayed for. The default duration is 3 seconds
-    var duration: NSTimeInterval = 3.0
+    public var duration: NSTimeInterval = 3.0
     
     /// The position of the notification when presented on the window. The default position is Top
     var position: GTNotificationPosition = GTNotificationPosition.Top

@@ -1,0 +1,7 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.4'
+use_frameworks!
+
+# Icon font library for iOS. Currently supports Font-Awesome, Foundation icons, Zocial, and ionicons.
+pod 'FontAwesomeKit', '>= 2.2.0'
+
