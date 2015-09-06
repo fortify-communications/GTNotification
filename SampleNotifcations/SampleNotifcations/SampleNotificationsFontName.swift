@@ -8,6 +8,18 @@
 
 enum SampleNotificationsFontName: String {
     
+    case ProximaNovaItalic = "ProximaNova-ThinIt"
+    case ProximaNovaExtraBoldItalic = "ProximaNova-ExtrabldIt"
+    case ProximaNovaBlack = "ProximaNova-Black"
+    case ProximaNovaExtraBold = "ProximaNova-Extrabld"
+    case ProximaNovaBoldItalic = "ProximaNova-BoldIt"
+    case ProximaNovaRegular = "ProximaNova-Regular"
+    case ProximaNovaBlackItalic = "ProximaNova-BlackIt"
+    case ProximaNovaThin = "ProximaNovaT-Thin"
+    case ProximaNovaBold = "ProximaNova-Bold"
+    case ProximaNovaSemiBoldItalic = "ProximaNova-SemiboldIt"
+    case ProximaNovaSemiBold = "ProximaNova-Semibold"
+    
     case Zocial = "zocial"
     
     case FontAwesome = "FontAwesome"

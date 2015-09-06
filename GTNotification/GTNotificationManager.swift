@@ -2,7 +2,7 @@
 //  GTNotificationManager.swift
 //  An in app notification banner for Swift.
 //
-//  Release 1.4.1
+//  Release 1.4.2
 //  Solid red background + Exclamation mark symbol's image left aligned + Title left aligned + Message left aligned.
 //
 //  Created by Mathieu White on 2015-06-20.
@@ -260,33 +260,38 @@ public class GTNotificationView: UIView
         self.addConstraint(NSLayoutConstraint(item: self.messageLabel!,
             attribute: NSLayoutAttribute.Top,
             relatedBy: NSLayoutRelation.Equal,
-            //            toItem: self.titleLabel!,
+//            toItem: self.titleLabel!,
             toItem: self,
-            //            attribute: NSLayoutAttribute.Baseline,
+//            attribute: NSLayoutAttribute.Baseline,
             attribute: NSLayoutAttribute.Top,
             multiplier: 1.0,
-            //            constant: 0.0))
-            constant: self.verticalPadding))
+            constant: 0.0
+        ))
         
         // Message Label Left
         self.addConstraint(NSLayoutConstraint(item: self.messageLabel!,
             attribute: NSLayoutAttribute.Left,
             relatedBy: NSLayoutRelation.Equal,
-            //            toItem: self.titleLabel!,
-            toItem: self,
-            attribute: NSLayoutAttribute.Left,
+//            toItem: self.titleLabel!,
+//            attribute: NSLayoutAttribute.Left,
+            toItem: self.imageView!,
+            attribute: NSLayoutAttribute.Right,
             multiplier: 1.0,
-            constant: 0.0))
+//            constant: 0.0
+            constant: 10.0
+        ))
         
         // Message Label Right
         self.addConstraint(NSLayoutConstraint(item: self.messageLabel!,
             attribute: NSLayoutAttribute.Right,
             relatedBy: NSLayoutRelation.Equal,
-            //            toItem: self.titleLabel!,
+//            toItem: self.titleLabel!,
             toItem: self,
             attribute: NSLayoutAttribute.Right,
             multiplier: 1.0,
-            constant: 0.0))
+//            constant: 0.0
+            constant: -self.verticalPadding - 10
+        ))
         
         // Message Label Bottom
         self.addConstraint(NSLayoutConstraint(item: self.messageLabel!,
@@ -295,7 +300,9 @@ public class GTNotificationView: UIView
             toItem: self,
             attribute: NSLayoutAttribute.Bottom,
             multiplier: 1.0,
-            constant: -self.verticalPadding))
+//            constant: -self.verticalPadding
+            constant: 0.0
+        ))
     }
     
     /**
@@ -402,8 +409,7 @@ public class GTNotificationView: UIView
     
     :returns: the height of the notification view
     */
-    func heightForNoticationView() -> CGFloat
-    {
+    func heightForNoticationView() -> CGFloat {
         // Determine the maximum with of our labels
         let maximumLabelWidth: CGFloat = CGRectGetWidth(UIScreen.mainScreen().bounds) - (self.horizontalPadding * 2.0)
         

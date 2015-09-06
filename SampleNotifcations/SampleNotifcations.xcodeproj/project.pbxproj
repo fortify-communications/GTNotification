@@ -11,11 +11,22 @@
 		2C33CD011B9B450000A21578 /* BannerMessageNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C33CD001B9B450000A21578 /* BannerMessageNotification.swift */; };
 		2C33CD051B9B483F00A21578 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C33CD041B9B483F00A21578 /* AppFonts.swift */; };
 		2C33CD071B9B488000A21578 /* SampleNotificationsFontName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C33CD061B9B488000A21578 /* SampleNotificationsFontName.swift */; };
-		2C33CD0A1B9B4F9700A21578 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C33CD091B9B4F9700A21578 /* FontAwesome.otf */; };
-		2C33CD0C1B9B4FE000A21578 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C33CD0B1B9B4FE000A21578 /* Zocial.ttf */; };
-		2C33CD101B9B501800A21578 /* Foundation-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C33CD0D1B9B501800A21578 /* Foundation-icons.ttf */; };
-		2C33CD111B9B501800A21578 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C33CD0E1B9B501800A21578 /* Ionicons.ttf */; };
-		2C33CD121B9B501800A21578 /* Glyphicons-regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C33CD0F1B9B501800A21578 /* Glyphicons-regular.otf */; };
+		2C65BA121B9CA7A20004350C /* Foundation-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C65BA021B9CA7A20004350C /* Foundation-icons.ttf */; };
+		2C65BA131B9CA7A20004350C /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C65BA031B9CA7A20004350C /* Ionicons.ttf */; };
+		2C65BA141B9CA7A20004350C /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C65BA041B9CA7A20004350C /* Zocial.ttf */; };
+		2C65BA151B9CA7A20004350C /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C65BA051B9CA7A20004350C /* FontAwesome.otf */; };
+		2C65BA161B9CA7A20004350C /* Glyphicons-regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C65BA061B9CA7A20004350C /* Glyphicons-regular.otf */; };
+		2C65BA171B9CA7A20004350C /* ProximaNova-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C65BA071B9CA7A20004350C /* ProximaNova-Black.otf */; };
+		2C65BA181B9CA7A20004350C /* ProximaNova-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C65BA081B9CA7A20004350C /* ProximaNova-BlackItalic.otf */; };
+		2C65BA191B9CA7A20004350C /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C65BA091B9CA7A20004350C /* ProximaNova-Bold.otf */; };
+		2C65BA1A1B9CA7A20004350C /* ProximaNova-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C65BA0A1B9CA7A20004350C /* ProximaNova-BoldItalic.otf */; };
+		2C65BA1B1B9CA7A20004350C /* ProximaNova-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C65BA0B1B9CA7A20004350C /* ProximaNova-ExtraBold.otf */; };
+		2C65BA1C1B9CA7A20004350C /* ProximaNova-ExtraboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C65BA0C1B9CA7A20004350C /* ProximaNova-ExtraboldItalic.otf */; };
+		2C65BA1D1B9CA7A20004350C /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C65BA0D1B9CA7A20004350C /* ProximaNova-Regular.otf */; };
+		2C65BA1E1B9CA7A20004350C /* ProximaNova-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C65BA0E1B9CA7A20004350C /* ProximaNova-SemiBoldItalic.otf */; };
+		2C65BA1F1B9CA7A20004350C /* ProximaNova-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C65BA0F1B9CA7A20004350C /* ProximaNova-Thin.otf */; };
+		2C65BA201B9CA7A20004350C /* ProximaNova-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C65BA101B9CA7A20004350C /* ProximaNova-ThinItalic.otf */; };
+		2C65BA211B9CA7A20004350C /* ProximaNovaSemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C65BA111B9CA7A20004350C /* ProximaNovaSemiBold.otf */; };
 		2CB69FCB1B7C09040063DA36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB69FCA1B7C09040063DA36 /* Main.storyboard */; };
 		4E1ED5F51B38EA4000BE8EAB /* GTNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1ED5F41B38EA4000BE8EAB /* GTNotification.swift */; };
 		4ECC19FA1B3740A10034B572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECC19F91B3740A10034B572 /* AppDelegate.swift */; };
@@ -41,11 +52,22 @@
 		2C33CD001B9B450000A21578 /* BannerMessageNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BannerMessageNotification.swift; path = ../../../../../../BannerMessageNotification.swift; sourceTree = "<group>"; };
 		2C33CD041B9B483F00A21578 /* AppFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
 		2C33CD061B9B488000A21578 /* SampleNotificationsFontName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleNotificationsFontName.swift; sourceTree = "<group>"; };
-		2C33CD091B9B4F9700A21578 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
-		2C33CD0B1B9B4FE000A21578 /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
-		2C33CD0D1B9B501800A21578 /* Foundation-icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Foundation-icons.ttf"; sourceTree = "<group>"; };
-		2C33CD0E1B9B501800A21578 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
-		2C33CD0F1B9B501800A21578 /* Glyphicons-regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Glyphicons-regular.otf"; sourceTree = "<group>"; };
+		2C65BA021B9CA7A20004350C /* Foundation-icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Foundation-icons.ttf"; sourceTree = "<group>"; };
+		2C65BA031B9CA7A20004350C /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
+		2C65BA041B9CA7A20004350C /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
+		2C65BA051B9CA7A20004350C /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		2C65BA061B9CA7A20004350C /* Glyphicons-regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Glyphicons-regular.otf"; sourceTree = "<group>"; };
+		2C65BA071B9CA7A20004350C /* ProximaNova-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Black.otf"; sourceTree = "<group>"; };
+		2C65BA081B9CA7A20004350C /* ProximaNova-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-BlackItalic.otf"; sourceTree = "<group>"; };
+		2C65BA091B9CA7A20004350C /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.otf"; sourceTree = "<group>"; };
+		2C65BA0A1B9CA7A20004350C /* ProximaNova-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-BoldItalic.otf"; sourceTree = "<group>"; };
+		2C65BA0B1B9CA7A20004350C /* ProximaNova-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-ExtraBold.otf"; sourceTree = "<group>"; };
+		2C65BA0C1B9CA7A20004350C /* ProximaNova-ExtraboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-ExtraboldItalic.otf"; sourceTree = "<group>"; };
+		2C65BA0D1B9CA7A20004350C /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		2C65BA0E1B9CA7A20004350C /* ProximaNova-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-SemiBoldItalic.otf"; sourceTree = "<group>"; };
+		2C65BA0F1B9CA7A20004350C /* ProximaNova-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Thin.otf"; sourceTree = "<group>"; };
+		2C65BA101B9CA7A20004350C /* ProximaNova-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-ThinItalic.otf"; sourceTree = "<group>"; };
+		2C65BA111B9CA7A20004350C /* ProximaNovaSemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaSemiBold.otf; sourceTree = "<group>"; };
 		2CB69FCA1B7C09040063DA36 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4E1ED5F41B38EA4000BE8EAB /* GTNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GTNotification.swift; path = ../GTNotification/GTNotification.swift; sourceTree = "<group>"; };
 		4ECC19F41B3740A10034B572 /* SampleNotifcations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleNotifcations.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,7 +114,6 @@
 		2C33CD031B9B480400A21578 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				2C33CD081B9B4E9200A21578 /* Font Files */,
 				2C33CD041B9B483F00A21578 /* AppFonts.swift */,
 				2C33CD061B9B488000A21578 /* SampleNotificationsFontName.swift */,
 			);
@@ -102,11 +123,22 @@
 		2C33CD081B9B4E9200A21578 /* Font Files */ = {
 			isa = PBXGroup;
 			children = (
-				2C33CD091B9B4F9700A21578 /* FontAwesome.otf */,
-				2C33CD0B1B9B4FE000A21578 /* Zocial.ttf */,
-				2C33CD0D1B9B501800A21578 /* Foundation-icons.ttf */,
-				2C33CD0E1B9B501800A21578 /* Ionicons.ttf */,
-				2C33CD0F1B9B501800A21578 /* Glyphicons-regular.otf */,
+				2C65BA021B9CA7A20004350C /* Foundation-icons.ttf */,
+				2C65BA031B9CA7A20004350C /* Ionicons.ttf */,
+				2C65BA041B9CA7A20004350C /* Zocial.ttf */,
+				2C65BA051B9CA7A20004350C /* FontAwesome.otf */,
+				2C65BA061B9CA7A20004350C /* Glyphicons-regular.otf */,
+				2C65BA071B9CA7A20004350C /* ProximaNova-Black.otf */,
+				2C65BA081B9CA7A20004350C /* ProximaNova-BlackItalic.otf */,
+				2C65BA091B9CA7A20004350C /* ProximaNova-Bold.otf */,
+				2C65BA0A1B9CA7A20004350C /* ProximaNova-BoldItalic.otf */,
+				2C65BA0B1B9CA7A20004350C /* ProximaNova-ExtraBold.otf */,
+				2C65BA0C1B9CA7A20004350C /* ProximaNova-ExtraboldItalic.otf */,
+				2C65BA0D1B9CA7A20004350C /* ProximaNova-Regular.otf */,
+				2C65BA0E1B9CA7A20004350C /* ProximaNova-SemiBoldItalic.otf */,
+				2C65BA0F1B9CA7A20004350C /* ProximaNova-Thin.otf */,
+				2C65BA101B9CA7A20004350C /* ProximaNova-ThinItalic.otf */,
+				2C65BA111B9CA7A20004350C /* ProximaNovaSemiBold.otf */,
 			);
 			name = "Font Files";
 			sourceTree = "<group>";
@@ -158,6 +190,7 @@
 		4ECC19F71B3740A10034B572 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2C33CD081B9B4E9200A21578 /* Font Files */,
 				4ECC19F81B3740A10034B572 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -282,13 +315,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C33CD0C1B9B4FE000A21578 /* Zocial.ttf in Resources */,
 				4ECC1A011B3740A10034B572 /* Images.xcassets in Resources */,
-				2C33CD111B9B501800A21578 /* Ionicons.ttf in Resources */,
+				2C65BA1D1B9CA7A20004350C /* ProximaNova-Regular.otf in Resources */,
+				2C65BA121B9CA7A20004350C /* Foundation-icons.ttf in Resources */,
+				2C65BA171B9CA7A20004350C /* ProximaNova-Black.otf in Resources */,
+				2C65BA151B9CA7A20004350C /* FontAwesome.otf in Resources */,
+				2C65BA1A1B9CA7A20004350C /* ProximaNova-BoldItalic.otf in Resources */,
+				2C65BA141B9CA7A20004350C /* Zocial.ttf in Resources */,
+				2C65BA1E1B9CA7A20004350C /* ProximaNova-SemiBoldItalic.otf in Resources */,
+				2C65BA1C1B9CA7A20004350C /* ProximaNova-ExtraboldItalic.otf in Resources */,
+				2C65BA131B9CA7A20004350C /* Ionicons.ttf in Resources */,
+				2C65BA201B9CA7A20004350C /* ProximaNova-ThinItalic.otf in Resources */,
+				2C65BA211B9CA7A20004350C /* ProximaNovaSemiBold.otf in Resources */,
+				2C65BA161B9CA7A20004350C /* Glyphicons-regular.otf in Resources */,
+				2C65BA181B9CA7A20004350C /* ProximaNova-BlackItalic.otf in Resources */,
 				2CB69FCB1B7C09040063DA36 /* Main.storyboard in Resources */,
-				2C33CD0A1B9B4F9700A21578 /* FontAwesome.otf in Resources */,
-				2C33CD121B9B501800A21578 /* Glyphicons-regular.otf in Resources */,
-				2C33CD101B9B501800A21578 /* Foundation-icons.ttf in Resources */,
+				2C65BA1B1B9CA7A20004350C /* ProximaNova-ExtraBold.otf in Resources */,
+				2C65BA191B9CA7A20004350C /* ProximaNova-Bold.otf in Resources */,
+				2C65BA1F1B9CA7A20004350C /* ProximaNova-Thin.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

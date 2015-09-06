@@ -36,6 +36,17 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
+		<string>ProximaNova-Regular.otf</string>
+		<string>ProximaNova-BlackItalic.otf</string>
+		<string>ProximaNova-Black.otf</string>
+		<string>ProximaNova-BoldItalic.otf</string>
+		<string>ProximaNova-Bold.otf</string>
+		<string>ProximaNova-ExtraboldItalic.otf</string>
+		<string>ProximaNova-ExtraBold.otf</string>
+		<string>ProximaNova-SemiBoldItalic.otf</string>
+		<string>ProximaNovaSemiBold.otf</string>
+		<string>ProximaNova-ThinItalic.otf</string>
+		<string>ProximaNova-Thin.otf</string>
 		<string>Zocial.ttf</string>
 		<string>FontAwesome.otf</string>
 		<string>Foundation-icons.ttf</string>

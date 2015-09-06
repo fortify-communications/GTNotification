@@ -2,9 +2,12 @@
 All notable changes to this project will be documented in this file.
 `GTNotification` adheres to [Semantic Versioning](http://semver.org/).
 
-- `1.x` Releases - From [Release 1.0-fixed](https://github.com/King-Wizard/GTNotification/releases/tag/1.0-fixed) To [Release 1.4.1](https://github.com/King-Wizard/GTNotification/releases/tag/1.4.1)
+- `1.x` Releases - From [Release 1.0-fixed](https://github.com/King-Wizard/GTNotification/releases/tag/1.0-fixed) To [Release 1.4.2](https://github.com/King-Wizard/GTNotification/releases/tag/1.4.2)
 
 ---
+
+#### [Release 1.4.2](https://github.com/King-Wizard/GTNotification/releases/tag/1.4.2)
+- Final custom release: partially fixed NSLayoutConstraint issues (it still remains some issues in particular cases).
 
 #### [Release 1.4.1](https://github.com/King-Wizard/GTNotification/releases/tag/1.4.1)
 - Final custom release: improved the previous release adding a way of programmatically dismissing the banner message notification.
