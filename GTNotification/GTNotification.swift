@@ -18,7 +18,7 @@ import UIKit
     Tells the delegate that the notification has been dismissed
     and is no longer visible on the application's window.
     
-    :param: notification the notification object that was dismissed
+    - parameter notification: the notification object that was dismissed
     */
     optional func notificationDidDismiss(notification: GTNotification)
     
@@ -26,9 +26,9 @@ import UIKit
     Asks the delegate for the font that should be used to display
     the title on the notification.
     
-    :param: notification the object requesting a font for its title
+    - parameter notification: the object requesting a font for its title
     
-    :returns: the font for the notitifcation's title
+    - returns: the font for the notitifcation's title
     */
     optional func notificationFontForTitleLabel(notification: GTNotification) -> UIFont
     
@@ -36,9 +36,9 @@ import UIKit
     Asks the delegate for the font that should be used to display
     the message on the notification.
     
-    :param: notification the object requesting a font for its message
+    - parameter notification: the object requesting a font for its message
     
-    :returns: the font for the notitifcation's message
+    - returns: the font for the notitifcation's message
     */
     optional func notificationFontForMessageLabel(notification: GTNotification) -> UIFont
 }
@@ -101,8 +101,8 @@ public class GTNotification: NSObject
     /**
     Adds a target and action for a particular event to an interal dispatch table.
     
-    :param: target the target object to which the action message is sent
-    :param: action a selector identifying an action message
+    - parameter target: the target object to which the action message is sent
+    - parameter action: a selector identifying an action message
     */
     public func addTarget(target: AnyObject, action: Selector)
     {

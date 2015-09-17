@@ -93,10 +93,10 @@ class AppFonts: NSObject {
     Print the names of all fonts available for this app.
     */
     class func printAllFontNames() {
-        for fontFamilyName: String in UIFont.familyNames() as! [String] {
-            println("\(getVaList([fontFamilyName]))")
-            for fontName: String in UIFont.fontNamesForFamilyName(fontFamilyName) as! [String] {
-                println("\t\(getVaList([fontName]))")
+        for fontFamilyName: String in UIFont.familyNames() {
+            print("\(getVaList([fontFamilyName]))")
+            for fontName: String in UIFont.fontNamesForFamilyName(fontFamilyName) {
+                print("\t\(getVaList([fontName]))")
             }
         }
     }

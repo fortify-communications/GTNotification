@@ -35,7 +35,7 @@ user touches on objects.
     /**
     Tells the delegate the notification view was tapped.
     
-    :param: notificationView the GTNotificationView object being tapped
+    - parameter notificationView: the GTNotificationView object being tapped
     */
     optional func notificationViewTapped(notificationView: GTNotificationView)
 }
@@ -106,7 +106,7 @@ public class GTNotificationView: UIView
     
     // MARK: - Initialization
     
-    required public init(coder aDecoder: NSCoder)
+    required public init?(coder aDecoder: NSCoder)
     {
         super.init(coder: aDecoder)
     }
@@ -128,7 +128,7 @@ public class GTNotificationView: UIView
         // Set the default properties of the GTNotificationView
         self.backgroundColor = UIColor.clearColor()
         self.alpha = 1.0
-        self.setTranslatesAutoresizingMaskIntoConstraints(false)
+        self.translatesAutoresizingMaskIntoConstraints = false
         
         // Initialize the title label for the notification view
         //        let titleLabel: UILabel = UILabel()
@@ -140,11 +140,11 @@ public class GTNotificationView: UIView
         messageLabel.font = UIFont.systemFontOfSize(13.0)
         messageLabel.numberOfLines = 0
         messageLabel.lineBreakMode = NSLineBreakMode.ByWordWrapping
-        messageLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
+        messageLabel.translatesAutoresizingMaskIntoConstraints = false
         
         // Initialize the image view for the notification view
         let imageView: UIImageView = UIImageView()
-        imageView.setTranslatesAutoresizingMaskIntoConstraints(false)
+        imageView.translatesAutoresizingMaskIntoConstraints = false
         
         // Initialize the tap gesture
         //        let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: Selector("notificationTapped"))
@@ -177,13 +177,13 @@ public class GTNotificationView: UIView
         {
             // Layout the blur view vertically
             self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[_blur]|",
-                options: NSLayoutFormatOptions(0),
+                options: NSLayoutFormatOptions(rawValue: 0),
                 metrics: nil,
                 views: ["_blur" : self.blurView!]))
             
             // Layout the blur view horizontally
             self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[_blur]|",
-                options: NSLayoutFormatOptions(0),
+                options: NSLayoutFormatOptions(rawValue: 0),
                 metrics: nil,
                 views: ["_blur" : self.blurView!]))
         }
@@ -311,7 +311,7 @@ public class GTNotificationView: UIView
     func layoutNotificationViewInWindow()
     {
         // Get a reference of the application window
-        var window: UIWindow? = UIApplication.sharedApplication().keyWindow
+        let window: UIWindow? = UIApplication.sharedApplication().keyWindow
         
         // The application has a key window
         if let window = window
@@ -323,22 +323,22 @@ public class GTNotificationView: UIView
             self.notificationViewHeight = self.heightForNoticationView()
             
             // Views Dictionary
-            var viewsDict: [NSObject : AnyObject] = [NSObject : AnyObject]()
+            var viewsDict = [String : AnyObject]()
             viewsDict["_view"] = self
             
             // Metrics Dictionary
-            var metricsDict: [NSObject : AnyObject] = [NSObject : AnyObject]()
+            var metricsDict = [String : AnyObject]()
             metricsDict["_h"] = self.notificationViewHeight
             
             // Notification View Width
-            let notificationHorizontalConstraints: [AnyObject] = NSLayoutConstraint.constraintsWithVisualFormat("H:|[_view]|",
-                options: NSLayoutFormatOptions(0),
+            let notificationHorizontalConstraints: [NSLayoutConstraint] = NSLayoutConstraint.constraintsWithVisualFormat("H:|[_view]|",
+                options: NSLayoutFormatOptions(rawValue: 0),
                 metrics: metricsDict,
                 views: viewsDict)
             
             // Notification View Height
-            let notificationVerticalConstraints: [AnyObject] = NSLayoutConstraint.constraintsWithVisualFormat("V:[_view(_h)]",
-                options: NSLayoutFormatOptions(0),
+            let notificationVerticalConstraints: [NSLayoutConstraint] = NSLayoutConstraint.constraintsWithVisualFormat("V:[_view(_h)]",
+                options: NSLayoutFormatOptions(rawValue: 0),
                 metrics: metricsDict,
                 views: viewsDict)
             
@@ -407,7 +407,7 @@ public class GTNotificationView: UIView
     /**
     This method calculates and returns the height for the notification view.
     
-    :returns: the height of the notification view
+    - returns: the height of the notification view
     */
     func heightForNoticationView() -> CGFloat {
         // Determine the maximum with of our labels
@@ -436,7 +436,7 @@ public class GTNotificationView: UIView
     /**
     This method applies the notification view's visual attributes.
     
-    :param: notification the notification that will be displayed
+    - parameter notification: the notification that will be displayed
     */
     func prepareForNotification(notification: GTNotification)
     {
@@ -466,7 +466,7 @@ public class GTNotificationView: UIView
             // Add the blur effect to the notification view
             let blurEffect: UIBlurEffect = UIBlurEffect(style: notification.blurEffectStyle!)
             let blurView: UIVisualEffectView = UIVisualEffectView(effect: blurEffect)
-            blurView.setTranslatesAutoresizingMaskIntoConstraints(false)
+            blurView.translatesAutoresizingMaskIntoConstraints = false
             self.insertSubview(blurView, atIndex: 0)
             self.blurView = blurView
         }
@@ -496,8 +496,8 @@ public class GTNotificationView: UIView
     /**
     This method animates the notification view on the application's window
     
-    :param: show         true if the notification view will dismiss, false otherwise
-    :param: completion   the completion closure to execute after the animation
+    - parameter show:         true if the notification view will dismiss, false otherwise
+    - parameter completion:   the completion closure to execute after the animation
     */
     func animateNotification(willShow show: Bool, completion: (finished: Bool) -> Void)
     {
@@ -593,7 +593,7 @@ public class GTNotificationManager: NSObject, GTNotificationViewDelegate
     /**
     This method shows the notification on the application's window.
     
-    :param: notification the notification to display
+    - parameter notification: the notification to display
     */
     public func showNotification(notification: GTNotification)
     {
@@ -634,7 +634,7 @@ public class GTNotificationManager: NSObject, GTNotificationViewDelegate
     */
     @objc private func dismissCurrentNotification(timer: NSTimer?)
     {
-        var notification: GTNotification? = timer?.userInfo as? GTNotification
+        let notification: GTNotification? = timer?.userInfo as? GTNotification
         
         self.dismissalTimer?.invalidate()
         self.dismissalTimer = nil

@@ -13,7 +13,7 @@ All notable changes to this project will be documented in this file.
 - Final custom release: improved the previous release adding a way of programmatically dismissing the banner message notification.
 
 #### [Release 1.4](https://github.com/King-Wizard/GTNotification/releases/tag/1.4)
-- Final custom release.
+- Final custom release: solid red background + with/without exclamation mark symbol's image + no title + message centered.
 
 #### [Release 1.3-fixed](https://github.com/King-Wizard/GTNotification/releases/tag/1.3-fixed)
 - Solid red background + Exclamation mark symbol's image left aligned + Title centered + Message centered.
