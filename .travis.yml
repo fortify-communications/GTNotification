@@ -26,6 +26,9 @@ script:
   CODE_SIGN_IDENTITY=""
   CODE_SIGNING_REQUIRED=NO
 
+notifications:
+  email: false
+
 before_install:
   - brew update
   - brew uninstall xctool && brew install --HEAD xctool
