@@ -2,9 +2,14 @@
 All notable changes to this project will be documented in this file.
 `GTNotification` adheres to [Semantic Versioning](http://semver.org/).
 
-- `1.x` Releases - From [Release 1.0-fixed](https://github.com/King-Wizard/GTNotification/releases/tag/1.0-fixed) To [Release 1.4.2](https://github.com/King-Wizard/GTNotification/releases/tag/1.4.2)
+- `1.x` Releases - From [Release 1.0-fixed](https://github.com/King-Wizard/GTNotification/releases/tag/1.0-fixed) To [Release 1.4.3](https://github.com/King-Wizard/GTNotification/releases/tag/1.4.3)
+
+- `0.x` Releases - From [Release 0.1-fixed](https://github.com/King-Wizard/GTNotification/releases/tag/0.1-fixed) To [Release 0.2-fixed](https://github.com/King-Wizard/GTNotification/releases/tag/0.2-fixed)
 
 ---
+
+#### [Release 1.4.3](https://github.com/King-Wizard/GTNotification/releases/tag/1.4.3)
+- Final custom release: migration to iOS 9 and Xcode 7.
 
 #### [Release 1.4.2](https://github.com/King-Wizard/GTNotification/releases/tag/1.4.2)
 - Final custom release: partially fixed NSLayoutConstraint issues (it still remains some issues in particular cases).
@@ -26,3 +31,9 @@ All notable changes to this project will be documented in this file.
 
 #### [Release 1.0-fixed](https://github.com/King-Wizard/GTNotification/releases/tag/1.0-fixed)
 - First release: Mathieu White's fork unmodified + added CHANGELOG.md and GTNotification.podspec files.
+
+#### [Release 0.2-fixed](https://github.com/King-Wizard/GTNotification/releases/tag/0.2-fixed)
+- Second release of master branch: working.
+
+#### [Release 0.1-fixed](https://github.com/King-Wizard/GTNotification/releases/tag/0.1-fixed)
+- First release of master branch: bugged.
