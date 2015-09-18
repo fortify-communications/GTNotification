@@ -6,3 +6,4 @@ use_frameworks!
 pod 'FontAwesomeKit', '>= 2.2.0'
 
 pod 'GTNotification', :git => 'https://github.com/King-Wizard/GTNotification', :branch => 'branch-final-custom-version'
+#pod 'GTNotification', '>= 1.4.3'

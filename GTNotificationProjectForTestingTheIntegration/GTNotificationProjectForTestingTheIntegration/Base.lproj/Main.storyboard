@@ -8,7 +8,7 @@
         <!--The TITLE-->
         <scene sceneID="D9U-yK-ne3">
             <objects>
-                <viewController id="kg6-iQ-xZQ" customClass="ViewController" customModule="SampleNotifcations" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kg6-iQ-xZQ" customClass="ViewController" customModule="GTNotificationProjectForTestingTheIntegration" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pTf-e2-fdp"/>
                         <viewControllerLayoutGuide type="bottom" id="ME6-3w-4K2"/>
