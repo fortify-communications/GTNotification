@@ -18,9 +18,9 @@ class ViewController: UIViewController, GTNotificationDelegate
         //        self.view.backgroundColor = UIColor.whiteColor()
         
         // Notification Button
-        let button: UIButton = UIButton.buttonWithType(UIButtonType.System) as! UIButton
+        let button: UIButton = UIButton(type: UIButtonType.System)
         button.setTitle("Show Notification", forState: UIControlState.Normal)
-        button.setTranslatesAutoresizingMaskIntoConstraints(false)
+        button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: Selector("notificationButtonPressed"), forControlEvents: UIControlEvents.TouchUpInside)
         
         self.view.addSubview(button)
@@ -64,19 +64,21 @@ class ViewController: UIViewController, GTNotificationDelegate
     func dismissNotification()
     {
         NSLog("The notification was dismissed manually")
-        
-        let alertController: UIAlertController = UIAlertController(title: "",
-            message: "Thank you for checking out GTNotification.",
-            preferredStyle: UIAlertControllerStyle.Alert)
-        
-        let dismissAction: UIAlertAction = UIAlertAction(title: "Dismiss",
-            style: UIAlertActionStyle.Default) { (alert) -> Void in
-                alertController.dismissViewControllerAnimated(true, completion: nil)
-        }
-        
-        alertController.addAction(dismissAction)
-        
-        self.presentViewController(alertController, animated: true, completion: nil)
+        dispatch_async(dispatch_get_main_queue(),{
+            let alertController: UIAlertController = UIAlertController(title: "",
+                message: "Thank you for checking out GTNotification.",
+                preferredStyle: UIAlertControllerStyle.Alert)
+            
+            let dismissAction: UIAlertAction = UIAlertAction(title: "Dismiss",
+                style: UIAlertActionStyle.Default) {
+                    (alert) -> Void in
+                    alertController.dismissViewControllerAnimated(true, completion: nil)
+            }
+            
+            alertController.addAction(dismissAction)
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+        })
     }
     
     // MARK: GTNotificationDelegate Methods
