@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WLT-0f-6IT">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--The TITLE-->
+        <scene sceneID="D9U-yK-ne3">
+            <objects>
+                <viewController id="kg6-iQ-xZQ" customClass="ViewController" customModule="SampleNotifcations" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pTf-e2-fdp"/>
+                        <viewControllerLayoutGuide type="bottom" id="ME6-3w-4K2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OTb-NO-u1D">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ej-7g-8uv">
+                                <rect key="frame" x="99" y="236" width="124" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2Ej-7g-8uv" secondAttribute="height" multiplier="124:33" id="iKW-j6-jqm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                <state key="normal" title="Show Notification">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showNotificationButtonPressed" destination="kg6-iQ-xZQ" eventType="touchUpInside" id="6Wu-ld-vbu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9R-Vq-Usb">
+                                <rect key="frame" x="92" y="331" width="138" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="D9R-Vq-Usb" secondAttribute="height" multiplier="46:11" id="Knu-gl-JVc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                <state key="normal" title="Dismiss Notification">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissNotificationButtonPressed" destination="kg6-iQ-xZQ" eventType="touchUpInside" id="p1x-Jg-AeX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="D9R-Vq-Usb" secondAttribute="centerX" constant="-1" id="EFb-FN-HFx"/>
+                            <constraint firstItem="D9R-Vq-Usb" firstAttribute="top" secondItem="2Ej-7g-8uv" secondAttribute="bottom" constant="62" id="QN6-4A-l1T"/>
+                            <constraint firstAttribute="centerX" secondItem="2Ej-7g-8uv" secondAttribute="centerX" constant="-1" id="svo-aV-grp"/>
+                            <constraint firstItem="2Ej-7g-8uv" firstAttribute="top" secondItem="pTf-e2-fdp" secondAttribute="bottom" constant="172" id="vPl-GY-sk9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="The TITLE" id="HBj-a2-5nu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pr7-1c-Yo5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878" y="365"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Fho-LP-AFh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WLT-0f-6IT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UND-pX-gYS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kg6-iQ-xZQ" kind="relationship" relationship="rootViewController" id="3Wf-u8-FC4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ls-XP-tyT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="430" y="365"/>
+        </scene>
+    </scenes>
+</document>
