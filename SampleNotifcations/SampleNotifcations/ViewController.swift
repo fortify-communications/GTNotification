@@ -18,9 +18,9 @@ class ViewController: UIViewController, GTNotificationDelegate
         //        self.view.backgroundColor = UIColor.whiteColor()
         
         // Notification Button
-        let button: UIButton = UIButton.buttonWithType(UIButtonType.System) as! UIButton
+        let button: UIButton = UIButton(type: UIButtonType.System)
         button.setTitle("Show Notification", forState: UIControlState.Normal)
-        button.setTranslatesAutoresizingMaskIntoConstraints(false)
+        button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: Selector("notificationButtonPressed"), forControlEvents: UIControlEvents.TouchUpInside)
         
         self.view.addSubview(button)
