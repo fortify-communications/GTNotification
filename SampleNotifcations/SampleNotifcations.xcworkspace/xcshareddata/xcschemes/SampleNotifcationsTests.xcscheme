@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "205D85F36BECD1DD9D7E42750CC9A715"
+               BlueprintIdentifier = "D115E6734036A3D0F36EA8FCA2E296AD"
                BuildableName = "FontAwesomeKit.framework"
                BlueprintName = "FontAwesomeKit"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -23,9 +23,9 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4ECC1A081B3740A10034B572"
@@ -70,9 +70,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4ECC19F31B3740A10034B572"
-            BuildableName = "SampleNotifcations.app"
-            BlueprintName = "SampleNotifcations"
+            BlueprintIdentifier = "4ECC1A081B3740A10034B572"
+            BuildableName = "SampleNotifcationsTests.xctest"
+            BlueprintName = "SampleNotifcationsTests"
             ReferencedContainer = "container:SampleNotifcations.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -92,9 +92,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4ECC19F31B3740A10034B572"
-            BuildableName = "SampleNotifcations.app"
-            BlueprintName = "SampleNotifcations"
+            BlueprintIdentifier = "4ECC1A081B3740A10034B572"
+            BuildableName = "SampleNotifcationsTests.xctest"
+            BlueprintName = "SampleNotifcationsTests"
             ReferencedContainer = "container:SampleNotifcations.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -110,10 +110,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4ECC19F31B3740A10034B572"
-            BuildableName = "SampleNotifcations.app"
-            BlueprintName = "SampleNotifcations"
-            ReferencedContainer = "container:SampleNotifcations.xcodeproj">
+            BlueprintIdentifier = "D115E6734036A3D0F36EA8FCA2E296AD"
+            BuildableName = "FontAwesomeKit.framework"
+            BlueprintName = "FontAwesomeKit"
+            ReferencedContainer = "container:Pods/Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
