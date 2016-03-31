@@ -1,7 +1,7 @@
 # GTNotification [![CI Status](http://img.shields.io/travis/King-Wizard/GTNotification.svg?style=flat)](https://travis-ci.org/King-Wizard/GTNotification)
 An in-app notification banner for Swift.
 
-**Setup with Cocoapods (recommended setup)**
+**Setup with CocoaPods (recommended setup)**
 
 - Add the instructions below to your Podfile:
 
