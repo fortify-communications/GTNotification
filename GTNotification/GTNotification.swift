@@ -20,7 +20,7 @@ import UIKit
     
     - parameter notification: the notification object that was dismissed
     */
-    optional func notificationDidDismiss(notification: GTNotification)
+    @objc optional func notificationDidDismiss(notification: GTNotification)
     
     /**
     Asks the delegate for the font that should be used to display
@@ -30,7 +30,7 @@ import UIKit
     
     - returns: the font for the notitifcation's title
     */
-    optional func notificationFontForTitleLabel(notification: GTNotification) -> UIFont
+    @objc optional func notificationFontForTitleLabel(notification: GTNotification) -> UIFont
     
     /**
     Asks the delegate for the font that should be used to display
@@ -40,7 +40,7 @@ import UIKit
     
     - returns: the font for the notitifcation's message
     */
-    optional func notificationFontForMessageLabel(notification: GTNotification) -> UIFont
+    @objc optional func notificationFontForMessageLabel(notification: GTNotification) -> UIFont
 }
 
 /**
@@ -56,10 +56,10 @@ public class GTNotification: NSObject
     public var message: String = "This is a sample notification."
     
     /// The color of the notifiation background. If blurEnabled is true, the color will be ignored. The default color is white
-    public var backgroundColor: UIColor = UIColor.whiteColor()
+    public var backgroundColor: UIColor = UIColor.white
     
     /// The color of the text and image of the notification. The default value is black
-    public var tintColor: UIColor = UIColor.blackColor()
+    public var tintColor: UIColor = UIColor.black
     
     /// The image icon for the notification
     public weak var image: UIImage?
@@ -69,7 +69,7 @@ public class GTNotification: NSObject
         didSet {
             if (self.blurEnabled == true)
             {
-                self.blurEffectStyle = UIBlurEffectStyle.Light
+                self.blurEffectStyle = UIBlurEffectStyle.light
             }
         }
     }
@@ -81,7 +81,7 @@ public class GTNotification: NSObject
     public var isDurationUnlimited: Bool = false
     
     /// The duration the notification should be displayed for. The default duration is 3 seconds
-    public var duration: NSTimeInterval = 3.0
+    public var duration: TimeInterval = 3.0
     
     /// The position of the notification when presented on the window. The default position is Top
     var position: GTNotificationPosition = GTNotificationPosition.Top
